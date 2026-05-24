@@ -523,24 +523,19 @@
   .original-body {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s;
   }
   .original-item.open .original-body {
-    max-height: 6000px;
-    overflow-y: auto;
+    max-height: 2000px;
   }
   .original-content {
-    padding: 18px 20px 24px;
+    padding: 0 20px 20px;
     font-size: 0.88rem;
     color: #b8b8c2;
     line-height: 1.85;
     border-top: 1px solid var(--border);
     margin: 0 20px;
-    max-height: 70vh;
-    overflow-y: auto;
   }
-  .original-content::-webkit-scrollbar { width: 4px; }
-  .original-content::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 2px; }
   .original-content h4 {
     font-size: 0.95rem;
     font-weight: 700;
@@ -597,8 +592,14 @@
 
 <!-- Hero -->
 <header class="hero">
-  <h1>旧时代碳基人的反思</h1>
-  <p class="subtitle">硅基时代的核心资产 · 四大AI模型回答对比分析</p>
+  <h1>硅基时代的核心资产</h1>
+  <p class="subtitle">四大AI模型回答对比分析 · ChatGPT 5.4 / Grok / Gemini 3.5 / DeepSeek V4</p>
+  <div class="badge-row">
+    <span class="badge chatgpt">🤖 ChatGPT 5.4</span>
+    <span class="badge grok">⚡ Grok 免费版</span>
+    <span class="badge gemini">🔮 Gemini 3.5 Flash</span>
+    <span class="badge deepseek">🧠 DeepSeek V4 Pro</span>
+  </div>
 </header>
 
 <div class="container">
@@ -1101,83 +1102,6 @@
     <p>ChatGPT 说「人类终究是碳基生物」，DeepSeek 说「那堵实在的墙壁或许仍然值得」。</p>
     <p style="margin-top:16px;">这不是矛盾，而是诚实。</p>
     <p class="big-line" style="margin-top:16px;">硅基时代最稀缺的，可能不是算力，不是数据——<br>而是还能被一堵真实的墙壁拥抱的感觉。</p>
-  </div>
-</div>
-
-<div class="section">
-  <div class="section-title"><span class="num">6</span> 🛡️ 碳基人在硅基时代的生存法则</div>
-  <p style="margin-bottom:20px;color:#b0b0ba;text-align:center;">不买股票，不赌宏观。普通人最强大的武器，是利用硅基工具放大自己的<strong style="color:#e0e0e6;">个体杠杆</strong>。</p>
-
-  <div class="original-accordion">
-    <div class="original-item" id="orig-survival" style="border-left: 4px solid var(--green);">
-      <div class="original-header" onclick="toggleOriginal('orig-survival')" style="gap:8px;">
-        <span class="o-icon">🛡️</span>
-        <span class="o-info">
-          <div class="o-name" style="color:var(--green);">点击展开：构建你的「数字资产集群」</div>
-          <div class="o-meta">5件可立刻上手的长期复利行动 · 约2000字</div>
-        </span>
-        <span class="o-hint">点击展开 ▾</span>
-        <span class="o-arrow">▾</span>
-      </div>
-      <div class="original-body">
-        <div class="original-content">
-          <p style="color:#d0d0d8;">买股票、基金，本质上是把自己的命运押注在"别人的公司"和"宏观经济"上，这是一种被动的、依然带有旧时代博弈色彩的方式。</p>
-          <p>在硅基时代，普通人最强大的武器，是<strong>利用硅基工具来放大自己的"个体杠杆"</strong>。不买股票，我们完全可以通过具体的行动，为自己构建一套<strong>"数字资产集群"</strong>。</p>
-
-          <h4>1. 建立你个人的"专有数据集"（知识资产化）</h4>
-          <p>未来，每个人都会拥有一个专属的个人AI Agent。但这个智能体聪不聪明，完全取决于你给它喂了什么数据。</p>
-          <p><strong>具体怎么做：</strong></p>
-          <ul>
-            <li><strong>停止碎片化收藏：</strong>不要只是在微信、小红书里点赞收藏，那些数据属于平台，不属于你。</li>
-            <li><strong>建立个人知识库：</strong>使用 Obsidian、Notion 或 Logseq 等工具，开始系统地记录你的工作经验、生活感悟、解决问题的步骤、甚至失败的教训。用结构化的文字（Markdown格式最好）保存下来。</li>
-          </ul>
-          <p><strong>为什么这是资产：</strong>这一步是在为你未来的"数字分身"准备原料。当未来的本地AI工具普及后，你可以一键导入你积累了数年的个人库。它会成为最懂你、最能代表你思维方式的终极助理。<em>你的经历和思考，就是你对AI时代的"独家授权"。</em></p>
-
-          <h4>2. 从"AI聊天者"升级为"工作流构建者"（技能资产化）</h4>
-          <p>不要只把GPT、Claude当成一个"高级搜索引擎"或聊天解闷的工具。你要学会用它们来<strong>组装自己的"自动化工厂"</strong>。</p>
-          <p><strong>具体怎么做：</strong></p>
-          <ul>
-            <li><strong>学习使用无代码/低代码AI工具：</strong>去尝试 Dify、Coze（扣子）、Make、Zapier 这样的平台。</li>
-            <li><strong>把你的日常工作"流水线化"：</strong>比如，你每天都要看行业新闻、写总结、发邮件。你可以花一个周末，在Dify上搭建一个工作流：让AI自动抓取特定网页 → 自动翻译并提炼核心要点 → 自动排版成小红书/邮件格式 → 自动发送到你的邮箱或草稿箱。</li>
-          </ul>
-          <p><strong>为什么这是资产：</strong>掌握了工作流，你就从一个"打工者"变成了"系统架构师"。<em>一个能熟练调用多个AI协同工作的普通人，其生产力等于过去一个5人小团队。</em>这种"调动硅基劳动力"的能力，就是你的新资产。</p>
-
-          <h4>3. 经营你的"数字信用与微主权"（信用资产化）</h4>
-          <p>当AI可以批量生成完美的内容时，<strong>"真实的人性"和"可验证的信任"</strong>反而会变得无比昂贵。</p>
-          <p><strong>具体怎么做：</strong></p>
-          <ul>
-            <li><strong>寻找你的极度细分领域（Niche）：</strong>哪怕是"如何用AI辅助养猫"、"某特定小众软件的使用教程"、"本地周末徒步路线规划"。</li>
-            <li><strong>持续输出真实体验：</strong>在数字平台上（如小红书、即刻、公众号、个人博客）分享你真实的、带有个人温度和瑕疵的探索过程。</li>
-            <li><strong>积累你的"100个铁杆粉丝"：</strong>不要追求百万粉丝，去追求100个真正信任你、愿意为你推荐的方案付费的精准用户。</li>
-          </ul>
-          <p><strong>为什么这是资产：</strong>硅基时代，流量会被AI洗牌，但<em>"人对人的信任"</em>无法被算法复制。你的个人品牌、你在某个小圈子里的信用，就是你对抗AI内容通胀的"护城河"。</p>
-
-          <h4>4. 训练自己的"提问力"与"审美判断力"（心智资产化）</h4>
-          <p>AI拉平了所有人在执行力上的差距。你和顶尖程序员、画家的差距，不再是"手艺"的熟练度，而是<strong>"眼界"和"定义问题"的能力</strong>。</p>
-          <p><strong>具体怎么做：</strong></p>
-          <ul>
-            <li><strong>练习"定义问题"：</strong>遇到问题时，不要急着问AI怎么做，先花时间想清楚"我真正想要解决的痛点是什么？"、"有没有更好的切入角度？"。</li>
-            <li><strong>提高你的审美阈值：</strong>多看经典的书籍、顶级的艺术作品、优秀的工业设计。审美不是天赋，是大量高质量输入的沉淀。一个审美在线的人，能让AI产出质量差距10倍的成果。</li>
-          </ul>
-          <p><strong>为什么这是资产：</strong>在所有人都拥有无限生产能力的时代，<em>"知道该生产什么"</em>成了唯一断货的东西。品味、判断力、提问的能力——这些无法被自动化的东西，是硅基时代的终极资产。</p>
-
-          <h4>5. 强化"线下真实连接"与"肉身健康"（实体资产化）</h4>
-          <p>这看似最不"硅基"，但却是最强大的对冲手段。当一切都数字化后，物理世界的体验将成为奢侈品。</p>
-          <p><strong>具体怎么做：</strong></p>
-          <ul>
-            <li><strong>锻炼身体：</strong>硅基时代，你的大脑每天都在虚拟世界里狂奔，但你的肉身需要承受现实的压力。精力管理是未来最核心的竞争力。</li>
-            <li><strong>建立物理社区：</strong>维护好身边的邻里、朋友、同城社群。多组织线下的茶聚、徒步、读书会。硅基世界连接越快，碳基世界的真实连接越珍贵。</li>
-            <li><strong>培养一个纯肉身爱好：</strong>跑步、攀岩、木工、做饭——任何不需要屏幕的事情。这是你在信息洪流中的"精神锚点"。</li>
-          </ul>
-          <p><strong>为什么这是资产：</strong>硅基时代最贵的不是算力，不是数据——而是<em>一个健康的身体和一群能在现实中拥抱你的人</em>。这和DeepSeek说的"那堵实在的墙壁"遥相呼应。</p>
-
-          <blockquote style="margin-top:20px;border-left-color:var(--green);background:rgba(52,211,153,0.05);">
-            <strong>碳基人的生存等式：</strong><br>
-            个人知识库 + AI工作流 + 数字信用 + 审美判断力 + 肉身健康 = 硅基时代的不可替代性
-          </blockquote>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 
